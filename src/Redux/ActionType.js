@@ -1,0 +1,9 @@
+export const MAKE_REQUEST='MAKE_REQUEST'
+export const FAIL_REQUEST='FAIL_REQUEST'
+export const GET_AUTHOR_LIST='GET_AUTHOR_LIST'
+export const DELETE_AUTHOR='DELETE_AUTHOR'
+export const ADD_AUTHOR='ADD_AUTHOR'
+export const UPDATE_AUTHER='UPDATE_AUTHER'
+export const GET_AUTHOR_OBJ='GET_AUTHOR_OBJ'
+
+export const ADD_BOOK='ADD_BOOK'
