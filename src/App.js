@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Author from './Components/Author/Authorlist';
+import Books from './Components/Books/Booklist';
 import { ToastContainer } from 'react-toastify';
 import { Provider } from 'react-redux';
 import Store from './Redux/Store';
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home></Home>}></Route>
               <Route path='/author' element={<Author></Author>}></Route>
+              <Route path='/books' element={<Books></Books>}></Route>
             </Routes>
           </BrowserRouter>
           <ToastContainer className="toast-position"

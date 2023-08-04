@@ -83,9 +83,10 @@ const Authorlist = (props) => {
             <div className="card">
                <h2>Authors</h2>
                 <div className="card-header">
-                    <div className="card-header" >
-                            <Link className="btn btn-warning" onClick={handleShow} > Add Author [+]</Link>
-                        </div>
+                 <div className="card-header" >
+                            <Link className="btn btn-success"  to={'/'} >Back To Dashboard</Link>
+                            <Link className="btn btn-warning btn-dashoard" onClick={handleShow} > Add Author [+]</Link>
+                         </div>
                 </div>
                 <div className="card-body">
                 <table className="table table-bordered">
@@ -197,6 +198,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         loaduser: () => dispatch(FetchAuthorList()),
         removeuser:(code)=>dispatch(RemoveAuthor(code))
+        
     }
 }
 

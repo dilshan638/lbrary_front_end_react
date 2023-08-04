@@ -6,8 +6,11 @@ const Home = () => {
             <Link to={'/author'}>
                  <button type="button" class="btn btn-primary btn-lg btn-block">Authors</button>
             </Link>
+            <Link to={'/books'}>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Books</button>
+            </Link>
            
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Books</button>
+            
         </div>
      );
 }

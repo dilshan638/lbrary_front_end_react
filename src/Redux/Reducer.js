@@ -1,5 +1,5 @@
-//import { ADD_USER, DELETE_USER, FAIL_REQUEST, GET_USER_LIST, GET_USER_OBJ, MAKE_REQUEST, UPDATE_USER } from "./ActionType"
-import {DELETE_AUTHOR, FAIL_REQUEST , GET_AUTHOR_LIST,  MAKE_REQUEST,ADD_AUTHOR,UPDATE_AUTHER,GET_AUTHOR_OBJ,ADD_BOOK} from "./ActionType"
+
+import {DELETE_AUTHOR, FAIL_REQUEST , GET_AUTHOR_LIST,  MAKE_REQUEST,ADD_AUTHOR,UPDATE_AUTHER,GET_AUTHOR_OBJ,ADD_BOOK,GET_BOOK_LIST,GET_AUTHOR_DETAILS,UPDATE_BOOK} from "./ActionType"
 
 const initialstate = {
     loading: true,
@@ -46,6 +46,22 @@ export const Reducer = (state = initialstate, action) => {
                 userobj:action.payload
             }
             case ADD_BOOK:return{
+                ...state,
+                loading:false
+            }
+            case GET_BOOK_LIST:
+                return {
+                    loading: false,
+                    errmessage: '',
+                    booklist:action.payload,
+                    authorobj:{}
+                }
+            case GET_AUTHOR_DETAILS:return{
+                ...state,
+                loading:false,
+                detailobj:action.payload
+            }
+            case UPDATE_BOOK:return{
                 ...state,
                 loading:false
             }
